@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Volvrit | IT & Taxation</title>
-    <link rel="shortcut icon" type="image/png" href="{{ asset('admin/images/volvrit.webp') }}" />
+    <title>Above All Agency | IT</title>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('admin/images/aboveall.png') }}" />
     <link rel="stylesheet" href="{{asset('adminui/css/styles.min.css')}}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
 
@@ -60,7 +60,7 @@
             <div>
                 <div class="brand-logo d-flex align-items-center justify-content-between">
                     <a href="{{url('/')}}" class="text-nowrap logo-img">
-                        <img src="{{ asset('admin/images/volvrit.webp') }}" width="100" alt="" />
+                        <img src="{{ asset('admin/images/aboveall.png') }}" width="100" alt="" />
                     </a>
                     <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                         <i class="ti ti-x fs-8"></i>
@@ -599,7 +599,7 @@
                             <span class="btn btn-primary">Welcome {{Auth::user()->name}}!</span>
                             <li class="nav-item dropdown">
                                 <a class="sidebar-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="{{ asset('admin/images/volvrit.webp') }}" alt="" width="35" height="35" class="rounded-circle">
+                                    <img src="{{ asset('admin/images/aboveall.png') }}" alt="" width="35" height="35" class="rounded-circle">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                                     <div class="message-body">

@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Volvrit | IT & Taxation</title>
-    <link rel="shortcut icon" type="image/png" href="{{ asset('admin/images/volvrit.webp') }}" />
+    <title>Above All Agency  | IT </title>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('admin/images/aboveall.png') }}" />
     <link rel="stylesheet" href="{{ asset('adminui/css/styles.min.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
@@ -163,7 +163,7 @@
     <div class="login-container">
         <div class="text-center">
             <a href="#" class="logo-img">
-                <img src="{{ asset('admin/images/volvrit.webp') }}" alt="Logo" width="120">
+                <img src="{{ asset('admin/images/aboveall.png') }}" alt="Logo" width="120">
             </a>
             <p>VOLVRIT</p>
         </div>
