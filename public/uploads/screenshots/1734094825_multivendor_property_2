@@ -1,0 +1,1113 @@
+{
+	"info": {
+		"_postman_id": "f0620c9e-52ac-493a-86b3-ca133b4a5a18",
+		"name": "collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40382032",
+		"_collection_link": "https://orange-spaceship-881139.postman.co/workspace/Team-Workspace~0b139506-c8b2-42a2-8212-5ade8b255dc7/collection/40382032-f0620c9e-52ac-493a-86b3-ca133b4a5a18?action=share&source=collection_link&creator=40382032"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "blogs",
+					"item": [
+						{
+							"name": "create blog",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhOTY0YzQ0MTRmZjVkMzdjOGQ1YjAiLCJpYXQiOjE3MzM5OTU0MTksImV4cCI6MTczNDYwMDIxOX0.geXTxOjWJllc155hA5wxlG7EikL3FGZMvrcsdtAdKTc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "The Future of AI:",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Artificial intelligence is transforming industries and society. This blog explores the exciting opportunities and significant challenges posed by AI in the years to come.",
+											"type": "text"
+										},
+										{
+											"key": "shortDescription",
+											"value": "Explore the opportunities and challenges of AI in shaping our future.",
+											"type": "text"
+										},
+										{
+											"key": "isActive",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "blogImage",
+											"type": "file",
+											"src": "/C:/Users/Mukesh/Downloads/Ai.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/blogs/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"blogs",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get blog",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhOTY0YzQ0MTRmZjVkMzdjOGQ1YjAiLCJpYXQiOjE3MzM5OTU0MTksImV4cCI6MTczNDYwMDIxOX0.geXTxOjWJllc155hA5wxlG7EikL3FGZMvrcsdtAdKTc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "blogImage",
+											"type": "file",
+											"src": "/C:/Users/Mukesh/Downloads/Ai.jpg",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/blogs/get-blog/675aaeb4995a09e81195704a",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"blogs",
+										"get-blog",
+										"675aaeb4995a09e81195704a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all blogs",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhOTY0YzQ0MTRmZjVkMzdjOGQ1YjAiLCJpYXQiOjE3MzM5OTU0MTksImV4cCI6MTczNDYwMDIxOX0.geXTxOjWJllc155hA5wxlG7EikL3FGZMvrcsdtAdKTc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "blogImage",
+											"type": "file",
+											"src": "/C:/Users/Mukesh/Downloads/Ai.jpg",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/blogs/all",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"blogs",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update blog",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhOTY0YzQ0MTRmZjVkMzdjOGQ1YjAiLCJpYXQiOjE3MzM5OTU0MTksImV4cCI6MTczNDYwMDIxOX0.geXTxOjWJllc155hA5wxlG7EikL3FGZMvrcsdtAdKTc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "The Future of AI:---",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Artificial intelligence is transforming industries and society. This blog explores the exciting opportunities and significant challenges posed by AI in the years to come.",
+											"type": "text"
+										},
+										{
+											"key": "shortDescription",
+											"value": "Explore the opportunities and challenges of AI in shaping our future.",
+											"type": "text"
+										},
+										{
+											"key": "isActive",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "blogImage",
+											"type": "file",
+											"src": "/C:/Users/Mukesh/Downloads/Ai.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/blogs/update/675aaeb4995a09e81195704a",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"blogs",
+										"update",
+										"675aaeb4995a09e81195704a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete blog",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhOTY0YzQ0MTRmZjVkMzdjOGQ1YjAiLCJpYXQiOjE3MzM5OTU0MTksImV4cCI6MTczNDYwMDIxOX0.geXTxOjWJllc155hA5wxlG7EikL3FGZMvrcsdtAdKTc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "blogImage",
+											"type": "file",
+											"src": "/C:/Users/Mukesh/Downloads/Ai.jpg",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/blogs/delete/675aabe21a9161b122f608b5",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"blogs",
+										"delete",
+										"675aabe21a9161b122f608b5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "contact-us",
+					"item": [
+						{
+							"name": "raise a querry",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"senderName\":\"Pawan\",\r\n \"senderEmail\":\"pawan843@gmail.com\", \r\n \"query\":\"lavda lasun\",\r\n  \"senderMobile\" :\"8770821586\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/contac-us/raise-query",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contac-us",
+										"raise-query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get query by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"senderName\":\"Pawan\",\r\n \"senderEmail\":\"pawan843@gmail.com\", \r\n \"query\":\"lavda lasun\",\r\n  \"senderMobile\" :\"8770821586\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/contac-us/get/675abf5a640a107d22e57e8b",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contac-us",
+										"get",
+										"675abf5a640a107d22e57e8b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update status",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"resolved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/contac-us/update-status/675abf5a640a107d22e57e8b",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contac-us",
+										"update-status",
+										"675abf5a640a107d22e57e8b"
+									]
+								},
+								"description": "### Update Contact Us Status\n\nThis endpoint is used to update the status of a contact request.\n\n#### Request\n\n- Method: PUT\n    \n- URL: `{{baseUrl}}/contac-us/update-status/675abf5a640a107d22e57e8b`\n    \n- Body:\n    \n    - `status` (string, required): The new status of the contact request.\n        \n\n#### Response\n\nThe response for this request is a JSON object with the following schema:\n\n``` json\n{\n  \"status\": \"string\"\n}\n\n ```\n\n- `status` (string): The status of the contact request after the update."
+							},
+							"response": []
+						},
+						{
+							"name": "get list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"resolved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/contac-us/query-list?page=2&limit=3",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contac-us",
+										"query-list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										},
+										{
+											"key": "limit",
+											"value": "3"
+										}
+									]
+								},
+								"description": "### Contact Us Query List\n\nThis endpoint retrieves a list of contact queries with pagination support.\n\n#### Request\n\n- Method: GET\n    \n- URL: `{{baseUrl}}/contac-us/query-list`\n    \n- Query Parameters:\n    \n    - `page` (number) - The page number for pagination.\n        \n    - `limit` (number) - The limit of items per page.\n        \n- { \"status\": \"resolved\"}\n    \n\n#### Response\n\n- Status: 200\n    \n- Content-Type: application/json\n    \n- { \"statusCode\": 0, \"data\": { \"result\": \\[ { \"_id\": \"\", \"senderName\": \"\", \"senderEmail\": \"\", \"senderMobile\": \"\", \"query\": \"\", \"status\": \"\", \"createdAt\": \"\", \"updatedAt\": \"\" } \\], \"pagination\": { \"currentPage\": 0, \"totalPages\": 0, \"totalItems\": 0, \"itemsPerPage\": 0 } }, \"message\": \"\", \"success\": true}\n    \n\nThis response includes a `statusCode` and `data` object containing an array of query results with pagination details. Each query result includes fields such as `_id`, `senderName`, `senderEmail`, `senderMobile`, `query`, `status`, `createdAt`, and `updatedAt`."
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "admin login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identifier\":\"adarshsrivastav375@gmail.com\",\r\n    \"password\":\"qwertyui\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/public/admin-login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"public",
+								"admin-login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identifier\":\"pawan8439927@gmail.com\",\r\n     \"password\" :\"qwertyui\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/public/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"public",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "public",
+			"item": [
+				{
+					"name": "signupuser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "pawan",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "pawan8439927@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "8439033985",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "dealer",
+									"type": "text"
+								},
+								{
+									"key": "isEmailVerified",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "isMobileVerified",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qwertyui",
+									"type": "text"
+								},
+								{
+									"key": "profileImage",
+									"type": "file",
+									"src": "/C:/Users/Mukesh/Downloads/profile image.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/public/signup",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"public",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send email otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"pawan8439927@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/public/send-email-otp",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"public",
+								"send-email-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"pawan8439927@gmail.com\",\r\n    \"otp\":\"434271\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/public/verify-email-otp",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"public",
+								"verify-email-otp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "property",
+			"item": [
+				{
+					"name": "add property",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhZDQ0YTlkMWZhMjI0YWU3YmRlNzIiLCJpYXQiOjE3MzQwNzk5NzksImV4cCI6MTczNDY4NDc3OX0.BeqZC8qf1dVw4BKfJ714RhtKClPXLtdsW3Zy4dnaJAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "features",
+									"value": "Pool",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Luxury Villa with Sea View",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "A beautiful villa located in a prime area with breathtaking sea views.",
+									"type": "text"
+								},
+								{
+									"key": "address[fullAddress]",
+									"value": " \"123 Ocean Drive, Sunset Beach\"",
+									"type": "text"
+								},
+								{
+									"key": "address[city]",
+									"value": "Miami",
+									"type": "text"
+								},
+								{
+									"key": "address[state]",
+									"value": "Florida",
+									"type": "text"
+								},
+								{
+									"key": "address[pinCode]",
+									"value": "33101",
+									"type": "text"
+								},
+								{
+									"key": "address[country]",
+									"value": "USA",
+									"type": "text"
+								},
+								{
+									"key": "address[coordinates][latitude]",
+									"value": "25.7617",
+									"type": "text"
+								},
+								{
+									"key": "address[coordinates][longitude]",
+									"value": "-80.1918",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1500000",
+									"type": "text"
+								},
+								{
+									"key": "propertyType",
+									"value": "Villa",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "For Sale",
+									"type": "text"
+								},
+								{
+									"key": "specifications[bedrooms]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "specifications[area]",
+									"value": "3500",
+									"type": "text"
+								},
+								{
+									"key": "specifications[landArea]",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "features",
+									"value": "garden",
+									"type": "text"
+								},
+								{
+									"key": "owner",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/Users/Mukesh/Downloads/property.jpeg",
+										"/C:/Users/Mukesh/Downloads/property.jpeg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/property/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"property",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get property",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhZDQ0YTlkMWZhMjI0YWU3YmRlNzIiLCJpYXQiOjE3MzQwNzk5NzksImV4cCI6MTczNDY4NDc3OX0.BeqZC8qf1dVw4BKfJ714RhtKClPXLtdsW3Zy4dnaJAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "features",
+									"value": "Pool",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Luxury Villa with Sea View",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "A beautiful villa located in a prime area with breathtaking sea views.",
+									"type": "text"
+								},
+								{
+									"key": "address[fullAddress]",
+									"value": " \"123 Ocean Drive, Sunset Beach\"",
+									"type": "text"
+								},
+								{
+									"key": "address[city]",
+									"value": "Miami",
+									"type": "text"
+								},
+								{
+									"key": "address[state]",
+									"value": "Florida",
+									"type": "text"
+								},
+								{
+									"key": "address[pinCode]",
+									"value": "33101",
+									"type": "text"
+								},
+								{
+									"key": "address[country]",
+									"value": "USA",
+									"type": "text"
+								},
+								{
+									"key": "address[coordinates][latitude]",
+									"value": "25.7617",
+									"type": "text"
+								},
+								{
+									"key": "address[coordinates][longitude]",
+									"value": "-80.1918",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1500000",
+									"type": "text"
+								},
+								{
+									"key": "propertyType",
+									"value": "Villa",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "For Sale",
+									"type": "text"
+								},
+								{
+									"key": "specifications[bedrooms]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "specifications[area]",
+									"value": "3500",
+									"type": "text"
+								},
+								{
+									"key": "specifications[landArea]",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "features",
+									"value": "garden",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/Users/Mukesh/Downloads/property.jpeg",
+										"/C:/Users/Mukesh/Downloads/property.jpeg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/property/get/675c070da9b176a87b8db593",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"property",
+								"get",
+								"675c070da9b176a87b8db593"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhZDQ0YTlkMWZhMjI0YWU3YmRlNzIiLCJpYXQiOjE3MzQwNzk5NzksImV4cCI6MTczNDY4NDc3OX0.BeqZC8qf1dVw4BKfJ714RhtKClPXLtdsW3Zy4dnaJAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "features",
+									"value": "Pool",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Luxury Villa with Sea View",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "A beautiful villa located in a prime area with breathtaking sea views.",
+									"type": "text"
+								},
+								{
+									"key": "address[fullAddress]",
+									"value": " \"123 Ocean Drive, Sunset Beach\"",
+									"type": "text"
+								},
+								{
+									"key": "address[city]",
+									"value": "Miami",
+									"type": "text"
+								},
+								{
+									"key": "address[state]",
+									"value": "Florida",
+									"type": "text"
+								},
+								{
+									"key": "address[pinCode]",
+									"value": "33101",
+									"type": "text"
+								},
+								{
+									"key": "address[country]",
+									"value": "USA",
+									"type": "text"
+								},
+								{
+									"key": "address[coordinates][latitude]",
+									"value": "25.7617",
+									"type": "text"
+								},
+								{
+									"key": "address[coordinates][longitude]",
+									"value": "-80.1918",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1500000",
+									"type": "text"
+								},
+								{
+									"key": "propertyType",
+									"value": "Villa",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "For Sale",
+									"type": "text"
+								},
+								{
+									"key": "specifications[bedrooms]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "specifications[area]",
+									"value": "3500",
+									"type": "text"
+								},
+								{
+									"key": "specifications[landArea]",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "features",
+									"value": "garden",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/Users/Mukesh/Downloads/property.jpeg",
+										"/C:/Users/Mukesh/Downloads/property.jpeg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/property/get-list",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"property",
+								"get-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVhZDQ0YTlkMWZhMjI0YWU3YmRlNzIiLCJpYXQiOjE3MzQwNzk5NzksImV4cCI6MTczNDY4NDc3OX0.BeqZC8qf1dVw4BKfJ714RhtKClPXLtdsW3Zy4dnaJAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "features",
+									"value": "Pool",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Luxury Villa with",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "A beautiful villa located in a prime area with breathtaking sea views.",
+									"type": "text"
+								},
+								{
+									"key": "address[fullAddress]",
+									"value": " \"123 Ocean Drive, Sunset Beach\"",
+									"type": "text"
+								},
+								{
+									"key": "address[city]",
+									"value": "Miami",
+									"type": "text"
+								},
+								{
+									"key": "address[state]",
+									"value": "Florida",
+									"type": "text"
+								},
+								{
+									"key": "address[pinCode]",
+									"value": "33104",
+									"type": "text"
+								},
+								{
+									"key": "address[country]",
+									"value": "USA",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address[coordinates][latitude]",
+									"value": "25.7617",
+									"type": "text"
+								},
+								{
+									"key": "address[coordinates][longitude]",
+									"value": "-80.1918",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1500000",
+									"type": "text"
+								},
+								{
+									"key": "propertyType",
+									"value": "Villa",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "For Sale",
+									"type": "text"
+								},
+								{
+									"key": "specifications[bedrooms]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "specifications[area]",
+									"value": "3500",
+									"type": "text"
+								},
+								{
+									"key": "specifications[landArea]",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "features",
+									"value": "garden",
+									"type": "text"
+								},
+								{
+									"key": "imagefiles",
+									"type": "file",
+									"src": "/C:/Users/Mukesh/Downloads/property.jpeg"
+								},
+								{
+									"key": "images",
+									"value": "https://wedding.s3.ap-south-1.amazonaws.com/properties/1734084363184_property.jpeg",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"value": "https://wedding.s3.ap-south-1.amazonaws.com/properties/1734088612966_property.jpeg",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "images",
+									"value": "https://wedding.s3.ap-south-1.amazonaws.com/properties/1734088666675_property.jpeg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/property/update/675c070da9b176a87b8db593",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"property",
+								"update",
+								"675c070da9b176a87b8db593"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,994 @@
+{
+	"info": {
+		"_postman_id": "a9f9a087-8d7c-4a45-84e8-f5d3d3bed3e4",
+		"name": "photographyApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40033882",
+		"_collection_link": "https://pixstudio09.postman.co/workspace/pixStudio~e9bb69bc-7d96-4d6e-8e0e-6039aee6987c/collection/40033882-a9f9a087-8d7c-4a45-84e8-f5d3d3bed3e4?action=share&source=collection_link&creator=40033882"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "get current user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5NWFiOGQwMjlmMzE4ODQxOWZhODgiLCJpYXQiOjE3MzI4NjM1ODAsImV4cCI6MTczMzQ2ODM4MH0.b3DOlo7IQoUfkS4aU3HWCglYprYvw_YlOKPitLwgla4"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identifier\":\"8770821586\",\r\n    \"password\":\"qwertyui\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/users/get-current-user",
+						"description": "### Get Current User\n\nThis endpoint makes an HTTP GET request to retrieve the details of the current user.\n\n#### Request Body\n\n- identifier (string): The user identifier.\n    \n- password (string): The user's password.\n    \n\n#### Response\n\nThe response will contain the details of the current user."
+					},
+					"response": []
+				},
+				{
+					"name": "edit user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5NWFiOGQwMjlmMzE4ODQxOWZhODgiLCJpYXQiOjE3MzI4NjM1ODAsImV4cCI6MTczMzQ2ODM4MH0.b3DOlo7IQoUfkS4aU3HWCglYprYvw_YlOKPitLwgla4"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"Adarsh\",\r\n  \"email\":\"fshggs@sgahgasf\",\r\n  \"isEmailVarified\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/update-user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"update-user"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "happycoding371@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "mobile",
+									"value": "8545808104",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "user",
+									"disabled": true
+								},
+								{
+									"key": "isEmailVerified",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "isMobileVerified",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "qwertyui",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change current password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5NWFiOGQwMjlmMzE4ODQxOWZhODgiLCJpYXQiOjE3MzI4NjM1ODAsImV4cCI6MTczMzQ2ODM4MH0.b3DOlo7IQoUfkS4aU3HWCglYprYvw_YlOKPitLwgla4"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"newPassword\":\"1234567890\",\r\n  \"oldPassword\":\"qwertyui\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/update-user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"update-user"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "happycoding371@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "mobile",
+									"value": "8545808104",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "user",
+									"disabled": true
+								},
+								{
+									"key": "isEmailVerified",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "isMobileVerified",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "qwertyui",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "public",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "register user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "happycoding31@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "8545808107",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "user",
+											"type": "text"
+										},
+										{
+											"key": "isEmailVerified",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "isMobileVerified",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "qwertyui",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "profileImage",
+											"type": "file",
+											"src": "/C:/Users/Mukesh/Desktop/Screenshot 2024-08-07 164231.png",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{baseUrl}}/public/signup"
+							},
+							"response": []
+						},
+						{
+							"name": "login with mobile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"mobile\":\"8770821586\",\r\n   \"otp\":\"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/public/mobile-login"
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identifier\":\"8770821586\",\r\n    \"password\":\"qwertyui\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/public/login"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "send mobile otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile\":\"8770821584\",\r\n    \"flag\":\"signup\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/public/send-mobile-otp"
+					},
+					"response": []
+				},
+				{
+					"name": "verify mobile otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"mobile\":\"8770821581\",\r\n    \"otp\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/public/verify-mobile-otp"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "package",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"silver\",\r\n    \"storageLimit\":\"200\",\r\n    \"unit\":\"GB\",\r\n    \"price\":10000, \r\n    \"duration\":\"12\",\r\n    \"durationUnit\":\"months\",\r\n    \"isActive\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/storagePackage/create"
+							},
+							"response": []
+						},
+						{
+							"name": "get all packages",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"silver\",\r\n    \"storageLimit\":\"200\",\r\n    \"unit\":\"GB\",\r\n    \"price\":10000, \r\n    \"duration\":\"12\",\r\n    \"durationUnit\":\"months\",\r\n    \"isActive\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/storagePackage/get-all"
+							},
+							"response": []
+						},
+						{
+							"name": "get by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"silver\",\r\n    \"storageLimit\":\"200\",\r\n    \"unit\":\"GB\",\r\n    \"price\":10000, \r\n    \"duration\":\"12\",\r\n    \"durationUnit\":\"months\",\r\n    \"isActive\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/storagePackage/get/67499113a90765092ad5a4af"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"silver\",\r\n    \"storageLimit\":\"300\",\r\n    \"unit\":\"GB\",\r\n    \"price\":10000, \r\n    \"duration\":\"12\",\r\n    \"durationUnit\":\"months\",\r\n    \"isActive\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/storagePackage/update/67499113a90765092ad5a4af"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"identifier\":\"8545808104\",\r\n    \"password\":\"qwertyui\"\r\n} \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/public/admin/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "photographer",
+			"item": [
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "create profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5N2VhNGI2YmI4YjE4MTZkM2U2YTUiLCJpYXQiOjE3MzI4Njk5MjMsImV4cCI6MTczMzQ3NDcyM30.Xx4Wo9vsR-BkX172ikmksgIuTa4M1Bp_BowmEsfgbsY"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bio\":\"I'm a passionate photographer with over 10 years of experience in capturing the beauty of life's special moments. From weddings to corporate events, John brings a creative touch to every shoot. With an eye for detail and a focus on storytelling, he ensures that every photo speaks volumes. John's work has been featured in several magazines and exhibitions, and his goal is to help clients preserve memories in the most artistic and personal way possible.\"\r\n,\r\n    \"specializations\": [\r\n  \"Wedding Photography\",\r\n  \"Portrait Photography\",\r\n  \"Event Photography\",\r\n  \"Corporate Photography\",\r\n  \"Fashion Photography\",\r\n  \"Product Photography\",\r\n  \"Real Estate Photography\",\r\n  \"Travel Photography\",\r\n  \"Food Photography\",\r\n  \"Landscape Photography\"\r\n]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/photographerProfile/create-profile"
+							},
+							"response": []
+						},
+						{
+							"name": "update profile ",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5N2VhNGI2YmI4YjE4MTZkM2U2YTUiLCJpYXQiOjE3MzI4Njk5MjMsImV4cCI6MTczMzQ3NDcyM30.Xx4Wo9vsR-BkX172ikmksgIuTa4M1Bp_BowmEsfgbsY"
+									}
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bio\":\"I'm a passionate photographer with over 10 years of experience in capturing the beauty of life's special moments. From weddings to corporate events, John brings a creative touch to every shoot. With an eye for detail and a focus on storytelling, he ensures that every photo speaks volumes. John's work has been featured in several magazines and exhibitions, and his goal is to help clients preserve memories in the most artistic and personal way possible.\"\r\n,\r\n    \"specializations\": [\r\n  \"Fashion Photography\",\r\n  \"Product Photography\",\r\n  \"Real Estate Photography\",\r\n  \"Travel Photography\",\r\n  \"Food Photography\",\r\n  \"Landscape Photography\"\r\n]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/photographerProfile/update-profile"
+							},
+							"response": []
+						},
+						{
+							"name": "get profile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5N2VhNGI2YmI4YjE4MTZkM2U2YTUiLCJpYXQiOjE3MzI4Njk5MjMsImV4cCI6MTczMzQ3NDcyM30.Xx4Wo9vsR-BkX172ikmksgIuTa4M1Bp_BowmEsfgbsY"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bio\":\"I'm a passionate photographer with over 10 years of experience in capturing the beauty of life's special moments. From weddings to corporate events, John brings a creative touch to every shoot. With an eye for detail and a focus on storytelling, he ensures that every photo speaks volumes. John's work has been featured in several magazines and exhibitions, and his goal is to help clients preserve memories in the most artistic and personal way possible.\"\r\n,\r\n    \"specializations\": [\r\n  \"Wedding Photography\",\r\n  \"Portrait Photography\",\r\n  \"Event Photography\",\r\n  \"Corporate Photography\",\r\n  \"Fashion Photography\",\r\n  \"Product Photography\",\r\n  \"Real Estate Photography\",\r\n  \"Travel Photography\",\r\n  \"Food Photography\",\r\n  \"Landscape Photography\"\r\n]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/photographerProfile/get-profile"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "register photographer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Anand Stephen",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "anandstephan98@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "8979669612",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "photographer",
+									"type": "text"
+								},
+								{
+									"key": "isEmailVerified",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "isMobileVerified",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qwertyui",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/public/signup"
+					},
+					"response": []
+				},
+				{
+					"name": " photographers login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identifier\":\"anandstephan98@gmail.com\",\r\n    \"password\":\"qwertyui\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/public/login"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identifier\":\"8979669612\",\r\n    \"password\":\"qwertyui\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/public/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "events",
+			"item": [
+				{
+					"name": "create event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"packageId\": \"64f93db567e9b9c47c123456\",\r\n  \"userId\": \"64f93dc456a9b1e37c123456\",\r\n  \"photographerId\": \"64f93de768c9a4c78d123456\",\r\n  \"name\": \"Birthday Celebration\",\r\n  \"eventDate\": \"2024-12-25T18:30:00.000Z\",\r\n  \"venue\": {\r\n    \"name\": \"Grand Palace Hall\",\r\n    \"street\": \"123 Celebration Street\",\r\n    \"city\": \"New York\",\r\n    \"state\": \"NY\",\r\n    \"postalCode\": \"10001\",\r\n    \"country\": \"USA\"\r\n  },\r\n  \"status\": \"upcoming\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/events/create"
+					},
+					"response": []
+				},
+				{
+					"name": "get event",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"packageId\": \"64f93db567e9b9c47c123456\",\r\n  \"userId\": \"64f93dc456a9b1e37c123456\",\r\n  \"photographerId\": \"64f93de768c9a4c78d123456\",\r\n  \"name\": \"Birthday Celebration\",\r\n  \"eventDate\": \"2024-12-25T18:30:00.000Z\",\r\n  \"venue\": {\r\n    \"name\": \"Grand Palace Hall\",\r\n    \"street\": \"123 Celebration Street\",\r\n    \"city\": \"New York\",\r\n    \"state\": \"NY\",\r\n    \"postalCode\": \"10001\",\r\n    \"country\": \"USA\"\r\n  },\r\n  \"status\": \"upcoming\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/events/get/674ff47b7473c9ddb40cb790"
+					},
+					"response": []
+				},
+				{
+					"name": "get event list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"packageId\": \"64f93db567e9b9c47c123456\",\r\n  \"userId\": \"64f93dc456a9b1e37c123456\",\r\n  \"photographerId\": \"64f93de768c9a4c78d123456\",\r\n  \"name\": \"Birthday Celebration\",\r\n  \"eventDate\": \"2024-12-25T18:30:00.000Z\",\r\n  \"venue\": {\r\n    \"name\": \"Grand Palace Hall\",\r\n    \"street\": \"123 Celebration Street\",\r\n    \"city\": \"New York\",\r\n    \"state\": \"NY\",\r\n    \"postalCode\": \"10001\",\r\n    \"country\": \"USA\"\r\n  },\r\n  \"status\": \"upcoming\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/events/get-list-photographer/67497ea4b6bb8b1816d3e6a5"
+					},
+					"response": []
+				},
+				{
+					"name": "get event list user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"packageId\": \"64f93db567e9b9c47c123456\",\r\n  \"userId\": \"64f93dc456a9b1e37c123456\",\r\n  \"photographerId\": \"64f93de768c9a4c78d123456\",\r\n  \"name\": \"Birthday Celebration\",\r\n  \"eventDate\": \"2024-12-25T18:30:00.000Z\",\r\n  \"venue\": {\r\n    \"name\": \"Grand Palace Hall\",\r\n    \"street\": \"123 Celebration Street\",\r\n    \"city\": \"New York\",\r\n    \"state\": \"NY\",\r\n    \"postalCode\": \"10001\",\r\n    \"country\": \"USA\"\r\n  },\r\n  \"status\": \"upcoming\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/events/get-list-user/67495ab8d029f3188419fa88"
+					},
+					"response": []
+				},
+				{
+					"name": "update an event",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Birthday Celebration\",\r\n  \"eventDate\": \"2024-12-25T18:30:00.000Z\",\r\n  \"venue\": {\r\n    \"name\": \"Grand Palace Hall-2\",\r\n    \"street\": \"123 Celebration Street\",\r\n    \"city\": \"New York\",\r\n    \"state\": \"NY\",\r\n    \"postalCode\": \"10001\",\r\n    \"country\": \"USA\"\r\n  },\r\n  \"status\": \"upcoming\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/events/update/674ff47b7473c9ddb40cb790"
+					},
+					"response": []
+				},
+				{
+					"name": "delete an event",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Birthday Celebration\",\r\n  \"eventDate\": \"2024-12-25T18:30:00.000Z\",\r\n  \"venue\": {\r\n    \"name\": \"Grand Palace Hall-2\",\r\n    \"street\": \"123 Celebration Street\",\r\n    \"city\": \"New York\",\r\n    \"state\": \"NY\",\r\n    \"postalCode\": \"10001\",\r\n    \"country\": \"USA\"\r\n  },\r\n  \"status\": \"upcoming\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/events/delete/674ff47b7473c9ddb40cb790"
+					},
+					"response": []
+				},
+				{
+					"name": "upload photos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5N2VhNGI2YmI4YjE4MTZkM2U2YTUiLCJpYXQiOjE3MzM0NjU2MDcsImV4cCI6MTczNDA3MDQwN30.u_UlI2rNhGj2robO85Yljs9iOGcYMhM9S6xY9qtcyIA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "eventName",
+									"value": "haldi",
+									"type": "text"
+								},
+								{
+									"key": "photos",
+									"type": "file",
+									"src": [
+										"/C:/Users/Mukesh/Desktop/Screenshot 2024-08-09 123235.png",
+										"/C:/Users/Mukesh/Desktop/Screenshot 2024-08-10 130402.png",
+										"/C:/Users/Mukesh/Desktop/Screenshot 2024-08-16 145835.png",
+										"/C:/Users/Mukesh/Desktop/Screenshot 2024-08-17 163353.png",
+										"/C:/Users/Mukesh/Desktop/Screenshot 2024-08-20 143425.png",
+										"/C:/Users/Mukesh/Desktop/Screenshot 2024-08-20 164512.png"
+									]
+								}
+							]
+						},
+						"url": "{{baseUrl}}/events/upload-photos/674ff47b7473c9ddb40cb790"
+					},
+					"response": []
+				},
+				{
+					"name": "upload more photos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5N2VhNGI2YmI4YjE4MTZkM2U2YTUiLCJpYXQiOjE3MzM0NjU2MDcsImV4cCI6MTczNDA3MDQwN30.u_UlI2rNhGj2robO85Yljs9iOGcYMhM9S6xY9qtcyIA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "eventName",
+									"value": "haldi",
+									"type": "text"
+								},
+								{
+									"key": "photos",
+									"type": "file",
+									"src": [
+										"/C:/Users/Mukesh/Downloads/wp3703427-iron-man-4k-wallpapers.jpg",
+										"/C:/Users/Mukesh/Downloads/wp3703420-iron-man-4k-wallpapers.jpg"
+									]
+								}
+							]
+						},
+						"url": "{{baseUrl}}/events/upload-more-photos/674ff47b7473c9ddb40cb790"
+					},
+					"response": []
+				},
+				{
+					"name": "delete photos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5N2VhNGI2YmI4YjE4MTZkM2U2YTUiLCJpYXQiOjE3MzM0NjU2MDcsImV4cCI6MTczNDA3MDQwN30.u_UlI2rNhGj2robO85Yljs9iOGcYMhM9S6xY9qtcyIA"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"eventName\":\"haldi\",\r\n    \"photoUrls\":[\"https://wedding.s3.ap-south-1.amazonaws.com/8979669612/haldi_674ff47b7473c9ddb40cb790_Screenshot%202024-08-09%20123235.png\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/events/delete-photos/674ff47b7473c9ddb40cb790"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Photo Package",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5N2VhNGI2YmI4YjE4MTZkM2U2YTUiLCJpYXQiOjE3MzMyOTU3OTMsImV4cCI6MTczMzkwMDU5M30.CWmxTGNs1etVYh-485yoBMbgFMxI8eBZLgBBAoqLSZQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"basic\",\r\n     \"photoCount\":200,\r\n      \"price\":2000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/photoPackage/create"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "event category",
+			"item": [
+				{
+					"name": "create event category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5NjNkMWJhZGZiMWYzNGQyNjliNDgiLCJpYXQiOjE3MzM3NDIwNTMsImV4cCI6MTczNDM0Njg1M30.wLuuvCaDjMFFz_wYWnp3nhKadzZ81Q9wyXn3I9h7S4I"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "haldi",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mukesh/Desktop/Screenshot 2024-08-16 145835.png"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/eventCategory/create"
+					},
+					"response": []
+				},
+				{
+					"name": "update event category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5NjNkMWJhZGZiMWYzNGQyNjliNDgiLCJpYXQiOjE3MzM3NDIwNTMsImV4cCI6MTczNDM0Njg1M30.wLuuvCaDjMFFz_wYWnp3nhKadzZ81Q9wyXn3I9h7S4I"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "haldi",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mukesh/Desktop/Screenshot 2024-08-20 164512.png"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/eventCategory/update/6756d9ebe72db6c92a5cb6bf"
+					},
+					"response": []
+				},
+				{
+					"name": "get event category by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5NjNkMWJhZGZiMWYzNGQyNjliNDgiLCJpYXQiOjE3MzM3NDIwNTMsImV4cCI6MTczNDM0Njg1M30.wLuuvCaDjMFFz_wYWnp3nhKadzZ81Q9wyXn3I9h7S4I"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "haldi",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mukesh/Desktop/Screenshot 2024-08-20 164512.png"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/eventCategory/get/6756d9ebe72db6c92a5cb6bf"
+					},
+					"response": []
+				},
+				{
+					"name": "get event categories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5NjNkMWJhZGZiMWYzNGQyNjliNDgiLCJpYXQiOjE3MzM3NDIwNTMsImV4cCI6MTczNDM0Njg1M30.wLuuvCaDjMFFz_wYWnp3nhKadzZ81Q9wyXn3I9h7S4I"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "haldi",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mukesh/Desktop/Screenshot 2024-08-20 164512.png"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/eventCategory/get-list"
+					},
+					"response": []
+				},
+				{
+					"name": "delete event category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ5NjNkMWJhZGZiMWYzNGQyNjliNDgiLCJpYXQiOjE3MzM3NDIwNTMsImV4cCI6MTczNDM0Njg1M30.wLuuvCaDjMFFz_wYWnp3nhKadzZ81Q9wyXn3I9h7S4I"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "haldi",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mukesh/Desktop/Screenshot 2024-08-20 164512.png"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/eventCategory/delete/6756d9ebe72db6c92a5cb6bf"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
