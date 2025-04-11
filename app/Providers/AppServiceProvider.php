@@ -38,6 +38,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Pennant\Feature;
 
+use Illuminate\Support\Facades\URL;
+
+
 use Illuminate\Pagination\Paginator;
 use Laravel\Sail\SailServiceProvider;
 
@@ -125,5 +128,10 @@ class AppServiceProvider extends ServiceProvider
         });
         Paginator::useBootstrap();
 
+
+        if (env('APP_ENV') !== 'local') {
+            URL::forceScheme('https');
+        }
+    
     }
 }
