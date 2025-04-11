@@ -23,7 +23,7 @@
         }
 
         .login-container {
-            background-color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.15);
             border-radius: 12px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
             padding: 40px;
@@ -165,7 +165,6 @@
             <a href="#" class="logo-img">
                 <img src="{{ asset('admin/images/aboveall.png') }}" alt="Logo" width="120">
             </a>
-            <p>VOLVRIT</p>
         </div>
 
         <div class="form-container">
